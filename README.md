@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here]()
+- Solution URL: [https://github.com/Jakub140/IPTracker_FrontEndMentor]
+- Live Site URL: [https://jakub140.github.io/IPTracker_FrontEndMentor/index.html]
 
 ## My process
 
