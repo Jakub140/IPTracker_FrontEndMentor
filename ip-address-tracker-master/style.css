@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+
+}
+
+:root {
+    --VeryDarkGray: hsl(0, 0%, 17%);
+    --DarkGray: hsl(0, 0%, 59%);
+    --White: rgb(255, 255, 255);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("./images/pattern-bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+}
+
+.captionHeader {
+    font-weight: 500;
+    color: var(--White);
+}
+
+.search_input {
+    font-size: 18px;
+    padding: 15px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    outline: none;
+    width: 35%;
+    border: 0;
+
+
+}
+
+.search_btn {
+    cursor: pointer;
+    border: 0;
+    background-color: var(--VeryDarkGray);
+    color: var(--White);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 15px;
+}
+
+.search_wrapper {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.forwardIcon {
+    vertical-align: middle;
+}
+
+.bold {
+    font-weight: 700;
+    color: gray;
+    font-size: 0.75em;
+    border-right: 1px solid rgb(161, 161, 161);
+
+    letter-spacing: 0.25em;
+}
+
+.AddressDetails {
+    position: relative;
+    top: 8vh;
+    margin: auto;
+    height: max-content;
+    width: 75%;
+    background-color: var(--White);
+    border-radius: 15px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    padding: 50px;
+    z-index: 1000;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.detailValue {
+    border-right: 1px solid rgb(161, 161, 161);
+    font-weight: 500;
+    padding-top: 10px;
+    font-size: 1.5em;
+}
+
+.last {
+    border-right: 0;
+}
+
+#map {
+    position: relative;
+    height: 70vh;
+}
+
+@media screen and (max-width:1200px) {
+    .AddressDetails {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 20px;
+    }
+
+    .bold {
+        border-right: 0 !important;
+    }
+
+    .detailValue {
+        border-right: 0 !important;
+    }
+
+    .detail {
+        width: 100%;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .search_input {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    header {
+        background-image: url("./images/pattern-bg-mobile.png");
+
+    }
+}
