@@ -27,8 +27,9 @@ Users should be able to:
 
 ### Screenshot
 
-  mobile design screenshot [](./screenshots/mobile-design.png)
-  desktop design screenshot [](./screenshots/desktop-design.png)
+[mobile design screenshot ](./screenshots/mobile-design.png)
+
+[desktop design screenshot](./screenshots/desktop-design.png)
 
 
 ### Links
