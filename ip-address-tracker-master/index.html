@@ -68,7 +68,8 @@
 
         document.querySelector(".locationDetails").textContent += typeof res.location.postalcode == "undefined" ? "" : ", " + res.location.postalcode
         document.querySelector(".timezoneDetails").textContent = res.location.timezone
-        document.querySelector(".ispDetails").textContent = res.isp
+        console.log()
+        document.querySelector(".ispDetails").textContent = res.isp == "" ? "-" : res.isp
       })
       .catch((err) => { console.log(err) })
 
@@ -85,9 +86,9 @@
   const btn_search = document.querySelector(".search_btn")
   btn_search.addEventListener("click", async () => {
     document.querySelector("#map").remove()
-     let mapcanva = document.createElement("main")
-     mapcanva.setAttribute("id","map")
-     document.body.appendChild(mapcanva)
+    let mapcanva = document.createElement("main")
+    mapcanva.setAttribute("id", "map")
+    document.body.appendChild(mapcanva)
     let inputSearch = document.querySelector(".search_input").value
     getIpData(inputSearch)
 
